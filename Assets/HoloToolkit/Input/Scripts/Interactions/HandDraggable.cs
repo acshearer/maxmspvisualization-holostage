@@ -10,6 +10,9 @@ namespace HoloToolkit.Unity.InputModule {
     /// Component that allows dragging an object with your hand on HoloLens.
     /// Dragging is done by calculating the angular delta and z-delta between the current and previous hand positions,
     /// and then repositioning the object based on that.
+    /// 
+    /// Additions by METEOR:
+    /// Limiting scaling along axis's for BoundingManager, WIP
     /// </summary>
     public class HandDraggable : MonoBehaviour,
                                  IFocusable,
@@ -211,7 +214,7 @@ namespace HoloToolkit.Unity.InputModule {
                 x = HostTransform.position.x;
                 y = HostTransform.position.y;
                 z = HostTransform.position.z;
-                Assets.BoundingManager.setStartingPos(new Vector3(x, y, z));
+                //Assets.BoundingManager.setStartingPos(new Vector3(x, y, z));
                 imageTargetChildren = new List<Transform>();
                 gameObject.transform.parent.GetComponentsInChildren<Transform>(imageTargetChildren);
                 first = false;

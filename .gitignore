@@ -33,3 +33,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Certificate files
+Assets/WSATestCertificate.pfx
+Assets/WSATestCertificate.pfx.meta

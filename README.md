@@ -12,3 +12,9 @@
 * To show jit.matrix from max
     * Send a jit.matrix with the built-in jit.net.send object with the correct IP and port (default 7474)
     * Data will appear in front of starting position of program
+
+* To compile for native (OSX/Windows)
+    * Delete Assets/HoloToolkit/* and Assets/Vuforia/*
+    * Other errors may appear, delete conflicting files.
+    * Target standalone in File->Build Settings
+    * Run and send data same as Hololens(UWP) application on your computer

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if (UNITY_NATIVE)
+using System;
 using Vuforia;
 using UnityEngine;
 
@@ -78,3 +79,4 @@ namespace Assets {
         }
     }
 }
+#endif
